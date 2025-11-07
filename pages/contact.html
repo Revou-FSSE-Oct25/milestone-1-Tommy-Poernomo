@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!--Web browser tab-->
+    <title>Contact | Tommy Poernomo</title>
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- seo meta -->
+    <meta name="description" content="Contact Tommy Poernomo to collaborate on web development projects or inquiries.">
+    <meta name="keywords" content="Tommy Poernomo, State Civil Apparatus, web developer, portfolio, projects">
+    <meta name="author" content="Tommy Poernomo">
+
 </head>
-<body>
-    
+
+<body id="top-page">
+    <!-- header -->
+    <header class="site-header" role="banner">
+        <h1 class="logo">
+            <a href="../index.html" aria-label="Homepage of Tommy Poernomo">Tommy Poernomo</a>
+        </h1>
+        <nav class="site-nav" aria-label="Main Navigation">
+            <ul class="list-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/projects.html">Projects</a></li>
+                <li><a href="../pages/contact.html" aria-current="page">Contact</a></li>
+                <li><a href="../assets/document/Tommy Poernomo - CV.pdf" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main id="main-content" role="main">
+        <!-- contact -->
+        <section class="contact-me" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Message us</h2>
+            <p>Just tell us if you want collaborate to develop some web app.</p>
+            <form action="#" method="post" aria-labelledby="contact-heading" role="form">
+                <fieldset>
+                    <legend>Reach out to us</legend>
+
+                    <label for="visitor-name">Name:</label>
+                    <input type="text" name="visitor-name" id="visitor-name" placeholder="Your name" autocomplete="name"
+                        required>
+
+                    <label for="visitor-email">Email:</label>
+                    <input type="email" name="visitor-email" id="visitor-email"
+                        placeholder="name-email@email-service.com" autocomplete="email" required>
+
+                    <label for="visitor-message">Message:</label>
+                    <textarea name="visitor-message" id="visitor-message" placeholder="Type Your message here"
+                        required></textarea>
+
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+        </section>
+    </main>
+
+
+
+    <!-- footer -->
+    <footer class="site-footer" role="contentinfo">
+        <p>© 2025 <strong>Tommy Poernomo</strong>. All rights reserved.</p>
+        <!-- Back to top (smooth scroll) -->
+        <button type="button" class="btn-top" onclick="window.scrollTo({top:0, behavior:'smooth'});"
+            aria-label="Back to Top">Back to top</button>
+        <address>
+            <nav aria-label="Social links">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/tommy-poernomo-ab0500154" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <img src="https://img.icons8.com/color/48/000000/linkedin.png" height="24" width="24"
+                                alt="LinkedIn" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Tommy-Poernomo" target="_blank" rel="noopener noreferrer"
+                            aria-label="Github Profile">
+                            <img src="https://img.icons8.com/color/48/000000/github.png" height="24" width="24"
+                                alt="GitHub logo/icon" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://web.facebook.com/tommy.poernomo" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook Profile">
+                            <img src="https://img.icons8.com/?size=100&id=CtrV2SV33rD9&format=png&color=000000"
+                                height="24" width="24" alt="Facebook logo/icon" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:tommy.poernomo@gmail.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Tommy Poernomo e-mail"></a>
+                        <img src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000" height="24"
+                            width="24" alt="Gmail logo/icon" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </address>
+    </footer>
 </body>
+
 </html>
