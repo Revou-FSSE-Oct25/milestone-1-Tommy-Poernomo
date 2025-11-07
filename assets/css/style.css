@@ -37,7 +37,6 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 1px solid #688e80; */
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
 }
 
@@ -114,9 +113,6 @@ strong {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    /* gap: 35px; */
-    /* padding: 0; */
-    /* margin-bottom: 70px; */
 }
 
 .hero figure {
@@ -179,7 +175,8 @@ strong {
     margin-bottom: 6px;
     font-size: 18px;
     color: #111;
-    border-bottom: 1px solid #e0e0e0;
+    /*border-left: 20px solid #0065ca;*/
+    border-bottom: 2px solid #55e2e9;
 }
 
 .bio {
@@ -193,7 +190,7 @@ strong {
     flex-direction: column;
     margin-bottom: 15px;
     width: 250px;
-    height: 250px;
+    height: 340px;
 }
 
 .bio img {
@@ -231,30 +228,32 @@ strong {
     line-height: 1.7;
 }
 
-.projects h2,
-.project h2 {
+.my-projects h2,
+.my-project h2 {
     font-size: 32px;
     color: #111;
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: 700;
-    border-bottom: 2px solid #688e80;
+    border-bottom: 2px solid #02367b;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
     display: inline-block;
 }
 
-.projects article h3,
-.project-card h3,
-.project h3 {
+.my-projects article h3,
+.my-project-card h3,
+.my-project h3 {
     font-size: 28px;
-    color: #688e80;
+    color: #02367b;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
-.projects p,
-.project p,
-.projects article p,
-.project-card p {
+.my-projects p,
+.my-project p,
+.my-projects article p,
+.my-project-card p {
     margin-bottom: 24px;
     font-size: 18px;
     color: #333;
@@ -262,48 +261,48 @@ strong {
     max-width: 100%;
 }
 
-.projects a, 
-.project a {
+.my-projects a, 
+.my-project a {
     color: #333;
     font-size: 18px;    
     font-weight: 500;
 }
 
-.projects a:hover, 
-.project a:hover {
-    color: #a7c4bc;
+.my-projects a:hover, 
+.my-project a:hover {
+    color: #7248f1;
 }
 
-.project nav {
+.my-project nav {
     margin: 30px 0 50px;
     padding: 0;
 }
 
-.project nav ul {
+.my-project nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.project-card {
+.my-project-card {
     display: flex;
     align-items: center;
     gap: 30px;
 
 }
 
-.project-card figure {
+.my-project-card figure {
     max-width: 1000px;
     margin-bottom: 10px;
 }
 
-.project-card figure img {
+.my-project-card figure img {
     width: 600px;
     border-radius: 5px;
     border: 2px solid #a7c4bc;
 }
 
-.contact h2 {
+.contact-me h2 {
     font-size: 32px;
     color: #111;
     margin-top: 15px;
@@ -314,7 +313,7 @@ strong {
 }
 
 fieldset {
-    border: 2px solid #a7c4bc;
+    border: 5px double #02367b;;
     padding: 20px 40px 40px;
 }
 
@@ -340,7 +339,6 @@ textarea {
     width: 100%;
     padding: 12px 14px;
     border: 2px solid #e0e0e0;
-    /* border-radius: 5px; */
     font-size: 16px;
     font-family: inherit;
     transition: border-color 0.3s ease;
@@ -359,23 +357,33 @@ textarea {
     resize: vertical;
 }
 
+button,
 button[type="submit"],
 button[type="reset"] {
     margin-top: 25px;
     margin-right: 10px;
     padding: 12px 24px;
-    background-color: #a7c4bc;
+    background-color: #897dbf;
     color: #333;
     border: none;
-    /* border-radius: 5px; */
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+button:hover {
+    background-color: #361eecc7;
+    color: #fff;
+}
+
 button[type="submit"]:hover {
-    background-color: #688e80;
+    background-color: #8f81fb;
+}
+
+button {
+    background-color: #e0e0e0;
+    color: #333;
 }
 
 button[type="reset"] {
