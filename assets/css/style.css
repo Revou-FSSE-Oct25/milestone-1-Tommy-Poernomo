@@ -175,7 +175,6 @@ strong {
     margin-bottom: 6px;
     font-size: 18px;
     color: #111;
-    /*border-left: 20px solid #0065ca;*/
     border-bottom: 2px solid #55e2e9;
 }
 
@@ -209,7 +208,7 @@ strong {
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: 700;
-    border-bottom: 2px solid #688e80;
+    border-bottom: 8px solid #02367b;
     display: inline-block;
 }
 
