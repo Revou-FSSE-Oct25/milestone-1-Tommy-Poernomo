@@ -57,7 +57,7 @@ ul {
 
 .site-nav .list-nav a {
     color: #333;
-    font-size: 18px;    
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -150,7 +150,7 @@ strong {
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: 700;
-    border-bottom: 10px  solid #02367b;
+    border-bottom: 10px solid #02367b;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     display: inline-block;
@@ -202,8 +202,8 @@ strong {
 }
 
 .bio h2,
-.skills h2, 
-.goals h2  {
+.skills h2,
+.goals h2 {
     font-size: 32px;
     color: #111;
     margin-top: 15px;
@@ -261,14 +261,14 @@ strong {
     max-width: 100%;
 }
 
-.my-projects a, 
+.my-projects a,
 .my-project a {
     color: #333;
-    font-size: 18px;    
+    font-size: 18px;
     font-weight: 500;
 }
 
-.my-projects a:hover, 
+.my-projects a:hover,
 .my-project a:hover {
     color: #7248f1;
 }
@@ -308,12 +308,14 @@ strong {
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: 700;
-    border-bottom: 2px solid #688e80;
+    border-bottom: 10px solid #02367b;
+    border-bottom-left-radius: 10%;
     display: inline-block;
 }
 
 fieldset {
-    border: 5px double #02367b;;
+    border: 5px double #02367b;
+    ;
     padding: 20px 40px 40px;
 }
 
@@ -350,7 +352,7 @@ input[type="email"]:focus,
 textarea:focus {
     outline: none;
     border-color: #a7c4bc;
-} 
+}
 
 textarea {
     min-height: 150px;
