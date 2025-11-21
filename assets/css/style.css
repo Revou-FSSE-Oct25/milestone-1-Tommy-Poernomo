@@ -426,3 +426,21 @@ button[type="reset"]:hover {
 .social-links img:hover {
     opacity: 1;
 }
+
+/* back-to-top */
+.back-to-top {
+    position: fixed;
+    bottom: 200px;
+    right: 30px;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #4cb7f1;
+    color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.back-to-top:hover {
+    background-color: #023E8A;
+    transform: scale(1.1);
+}
