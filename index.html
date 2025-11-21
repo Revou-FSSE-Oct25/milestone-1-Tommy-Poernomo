@@ -28,9 +28,9 @@
 
 </head>
 
-<body id="top-page">
+<body id="top-page" class="flex flex-col min-h-screen">
     <!-- header -->
-    <header class="site-header flex justify-between items-center p-10 pl-10 pr-10 text-blue-800 bg-slate-100 shadow-2xl" role="banner">
+    <header class="site-header flex justify-between items-center p-10 pl-10 pr-10 text-blue-800 bg-slate-100 shadow-xl" role="banner">
 
         <h1 class="logo text-3xl font-bold hover:text-blue-500 z-10">
             <a href="index.html" aria-label="Homepage of Tommy Poernomo">Tommy Poernomo</a>
@@ -41,7 +41,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
-        <nav id="mobile-menu" class=" transition-all duration-300 ease-in-out transform md:translate-x-0
+        <nav id="mobile-menu" class=" transition-all duration-300 ease-in-out transform md:translate-x-0 hidden
         site-nav  md:flex 
         md:static md:w-auto 
         fixed top-0 left-0 w-full h-full bg-white z-0 
@@ -62,24 +62,20 @@
 
     <!-- main -->
     <main id="main-content" role="main"
-        class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex items-center bg-white rounded-lg p-4 md:flex overflow-hidden box-border">
+        class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex items-center justify-center mx-auto bg-white rounded-lg p-4 md:flex overflow-hidden box-border flex-grow">
         <!-- hero -->
-        <section class="hero" id="hero">
-            <figure class="container">
-                <source media="(max-width: 600px)" srcset="assets/images/profile2.png"
-                    class="rounded-full mr-6 w-24 h-24 object-cover">
-                <source media="(max-width: 1200px)" srcset="assets/images/profile2.png"
-                    class="rounded-full mr-6 w-36 h-36 object-cover">
+        <section class="hero flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8" id="hero">
+            <figure class="flex flex-col items-center">
                 <img src="assets/images/profile2.png" alt="Profile photo of Tommy Poernomo" loading="lazy"
-                    class="rounded-full border-2 border-blue-800 mr-6 w-48 h-48 object-cover">
-                <figcaption>
-                    <div class="text-blue-800 font-sans italic">Tommy Poernomo — Beginner Web Developer</div>
+                    class="rounded-full border-2 border-blue-800 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 object-cover">
+                <figcaption class="mt-2">
+                    <div class="text-blue-800 font-sans italic text-center">Tommy Poernomo — Beginner Web Developer</div>
                 </figcaption>
             </figure>
 
-            <article class="">
-                <h2>Hi, I'm Tommy Poernomo 👋</h2>
-                <p>
+            <article class="max-w-lg text-center md:text-left">
+                <h2 class="text-2xl font-semibold mb-2">Hi, I'm Tommy Poernomo 👋</h2>
+                <p class="text-gray-700">
                     Welcome to my personal website — a world where I share everything about my journey as a student at
                     <strong>FSSE RevoU</strong>, my learning experience, and my projects I've built so far.
                 </p>
@@ -88,11 +84,11 @@
     </main>
 
     <!-- footer -->
-    <footer class="site-footer flex justify-between items-center pl-8 pr-8 p-4 text-blue-800 bg-slate-100" role="contentinfo">
+    <footer class="site-footer flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-4 text-blue-800 bg-slate-100 shadow-xl" role="contentinfo">
         <p>© 2025 <strong>Tommy Poernomo</strong>. All rights reserved.</p>
-        <address>
+        <address class="order-1 md:order-2">
             <nav aria-label="Social links">
-                <ul class="social-links flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 text-2xl md:text-lg p-4">
+                <ul class="social-links flex space-x-4">
                     <li>
                         <a href="https://www.linkedin.com/in/tommy-poernomo-ab0500154" target="_blank"
                             rel="noopener noreferrer" aria-label="LinkedIn Profile">
@@ -144,7 +140,7 @@
         });
     </script>
     <button>
-        <a href="#top-page" class="back-to-top hover:text-blue-800 fixed right-10 bottom-10 rounded-full bg-blue-500 text-white w-10 h-10 flex items-center justify-center text-2xl shadow-lg"
+        <a href="#top-page" class="back-to-top hover:text-blue-800 fixed right-10 bottom-30 rounded-full bg-blue-500 text-white w-10 h-10 flex items-center justify-center text-2xl shadow-lg"
             aria-label="Back to top of page">↑</a>
     </button>
 </body>
