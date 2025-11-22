@@ -8,7 +8,7 @@
     <!--Web browser tab-->
     <title>About Tommy Poernomo</title>
     <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -27,49 +27,73 @@
 
 </head>
 
-<body id="top-page">
+<body id="top-page" class="flex flex-col min-h-screen">
     <!-- header -->
-    <header class="site-header" role="banner">
-        <h1 class="logo">
+    <header class="site-header flex justify-between items-center p-10 pl-10 pr-10 text-blue-800 bg-slate-100 shadow-xl" " role="banner">
+        <h1 class="logo text-3xl font-bold hover:text-blue-500 z-10">
             <a href="../index.html" aria-label="Homepage of Tommy Poernomo">Tommy Poernomo</a>
         </h1>
-        <nav class="site-nav" aria-label="Main Navigation">
-            <ul class="list-nav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="../assets/documents/Tommy Poernomo - CV.pdf" download>Download CV</a></li>
+                <button id="menu-button" class="md:hidden p-2 z-10  hover:text-blue-500" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+                <nav id="mobile-menu" class=" transition-all duration-300 ease-in-out transform md:translate-x-0 hidden
+        site-nav  md:flex 
+        md:static md:w-auto 
+        fixed top-0 left-0 w-full h-full bg-white z-0 
+        md:bg-transparent md:h-auto 
+        flex-col justify-center items-center text-center
+    " aria-label="Main Navigation">
+            <ul class="list-nav flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 text-2xl md:text-lg">
+                <li class=" hover:text-blue-500"><a href="../index.html">Home</a></li>
+                <li class=" hover:text-blue-500"><a href="about.html" aria-current="page">About</a></li>
+                <li class=" hover:text-blue-500"><a href="projects.html">Projects</a></li>
+                <li class=" hover:text-blue-500"><a href="contact.html">Contact</a></li>
+                <li class=" hover:text-blue-500"><a href="../assets/documents/Tommy Poernomo - CV.pdf" download>Download CV</a></li>
             </ul>
-        </nav>
-                <nav>
-            <a href="#top-page" class="back-to-top" aria-label="Back to top of page">↑</a>
-        </nav>
+
     </header>
 
     <!-- main -->
-    <main id="main-content" role="main">
+    <!-- <main id="main-content" role="main" class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex items-center justify-center mx-auto bg-white rounded-lg p-4 md:flex overflow-hidden box-border flex-grow"> -->
+        <!-- <main id="main-content" role="main"
+    class="mb-5 hover:shadow-xl transition-all duration-300 ease-in-out 
+           flex flex-col items-center mx-auto 
+           bg-white rounded-lg p-4 max-w-6xl flex-grow"> -->
+                   <main id="main-content" role="main"
+    class="mb-5 
+           flex flex-col items-center mx-auto 
+           bg-white rounded-lg p-4 max-w-6xl flex-grow">
         <!-- bio -->
-        <section class="hero" id="hero">
-            <figure>
-                <img src="../assets/images/profile2.png" alt="Profile photo of Tommy Poernomo" loading="lazy" class="hover:scale-105 transition-all duration-300 ease-in-out">
-                <figcaption>Tommy Poernomo — Beginner Web Developer</figcaption>
+        <section class="hero flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 w-full justify-center pb-8 border-b border-gray-200" id="hero">
+            <figure class="flex flex-col items-center ">
+                <img src="../assets/images/profile2.png" alt="Profile photo of Tommy Poernomo" loading="lazy" class="rounded-full border-2 border-blue-800 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 object-cover hover:shadow-xl transition-all duration-300 ease-in-out">
+                <figcaption class="mt-2"><div class="text-blue-800 font-sans italic text-center">Tommy Poernomo — Beginner Web Developer</div></figcaption>
             </figure>
-            <article>
-                <h2>Hi, I'm <strong>Tommy Poernomo</strong></h2>
-                <p>RevoU FSSE Student with
+            <article class="max-w-lg text-center md:text-left">
+                <h2 class="text-3xl font-bold mb-2 text-blue-800">Hi, I'm <span class="font-extrabold">  Tommy Poernomo</span></h2>
+                <p class="text-gray-700">RevoU FSSE Student with
                     passion
                     for <strong>web development</strong>.</p>
             </article>
         </section>
         <!-- bio -->
-        <section class="bio" aria-labelledby="about-title">
+        <section class="bio w-full pt-8" aria-labelledby="about-title">
             <!-- about -->
             <section class="about-me" id="about-me" aria-labelledby="about-heading" >
-                
-                <article class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex-col items-center bg-white rounded-lg p-4 md:flex overflow-hidden box-border">
+                <h2 id="about-title" class="text-3xl font-bold mb-8 text-center text-blue-800">About & Experience</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <div class="space-y-6">
+                <!-- <article class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex-col items-center bg-white rounded-lg p-4 md:flex overflow-hidden box-border">
 <h2 id="about-heading" class="text-2xl font-bold mb-8">About Me</h2>
-                    <p>
+                    <p> -->
+                        <article class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-blue-800">About Me</h3>
+                    <p class="text-gray-700">
                         My journey in web development began in my first semester of college, using <strong>HTML</strong>
                         to
                         create static web pages. In the following semester, I was introduced to <strong>PHP</strong>,
@@ -81,18 +105,26 @@
                         websites to address the rapid technological advancements in various fields.
                     </p>
                 </article>
-                <article class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex-col items-center bg-white rounded-lg p-4 md:flex overflow-hidden box-border">
+                <!-- <article class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex-col items-center bg-white rounded-lg p-4 md:flex overflow-hidden box-border">
                     <h3 class="text-2xl font-bold mb-8">Education</h3>
-                    <p>
+                    <p> -->
+                        <article class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-blue-800">Education</h3>
+                    <p class="text-gray-700">
                         I Graduated from Politeknik Elektronika Negeri Surabaya in 2008. My Major is Information
                         Technology. Right now, I’m working as State Civil Apparatus, specifically as a teacher for the
                         Visual
                         Communication Design expertise concentration.
                     </p>
                 </article>
-                <article class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex-col items-center bg-white rounded-lg p-4 md:flex overflow-hidden box-border">
+            </div>
+                <!-- <article class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex-col items-center bg-white rounded-lg p-4 md:flex overflow-hidden box-border">
                     <h3 class="text-2xl font-bold mb-8">Experience</h3>
-                    <p>
+                    <p> -->
+                        <div class="space-y-6">
+                <article class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-blue-800">Experience</h3>
+                    <p class="text-gray-700">
                         Completed an internship at <strong>Head Office PT Berau Coal</strong> (<time
                             datetime="2006">2006</time>) developing a website for Community Development - One of the
                         departments at the Head Office of PT Berau Coal - Related to the fostered areas in the PT Berau
@@ -101,9 +133,12 @@
                         <strong>MySQL</strong>.
                     </p>
                 </article>
-                <article>
+                <!-- <article>
                     <h3 class="text-2xl font-bold mb-8">Skills & Interests</h3>
-                    <ul>
+                    <ul> -->
+                        <article class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-blue-800">Skills & Interests</h3>
+                    <ul class="text-gray-700 space-y-1 list-disc pl-5">
                         <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript</li>
                         <li><strong>Web Programming Fundamentals: </strong>PHP</li>
                         <li><strong>Version Control:</strong> Git & GitHub</li>
@@ -118,43 +153,65 @@
     </main>
 
     <!-- footer -->
-    <footer class="site-footer" role="contentinfo">
+    <footer class="site-footer flex flex-col md:flex-row justify-between items-center px-4 md:p-8 text-blue-800 bg-slate-100 shadow-xl" role="contentinfo">
         <p>© 2025 <strong>Tommy Poernomo</strong>. All rights reserved.</p>
-        <address>
+        <address class="order-1 md:order-2">
             <nav aria-label="Social links">
-                <ul class="social-links">
+                <ul class="social-links flex space-x-4">
                     <li>
                         <a href="https://www.linkedin.com/in/tommy-poernomo-ab0500154" target="_blank"
                             rel="noopener noreferrer" aria-label="LinkedIn Profile">
                             <img src="https://img.icons8.com/color/48/000000/linkedin.png" height="24" width="24"
-                                alt="LinkedIn" loading="lazy" class="hover:scale-150 transition-all duration-300 ease-in-out">
+                                alt="LinkedIn" loading="lazy"
+                                class="hover:scale-150 transition-all duration-300 ease-in-out">
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Tommy-Poernomo" target="_blank" rel="noopener noreferrer"
                             aria-label="Github Profile">
                             <img src="https://img.icons8.com/color/48/000000/github.png" height="24" width="24"
-                                alt="GitHub logo/icon" loading="lazy" class="hover:scale-150 transition-all duration-300 ease-in-out">
+                                alt="GitHub logo/icon" loading="lazy"
+                                class="hover:scale-150 transition-all duration-300 ease-in-out">
                         </a>
                     </li>
                     <li>
                         <a href="https://web.facebook.com/tommy.poernomo" target="_blank" rel="noopener noreferrer"
                             aria-label="Facebook Profile">
                             <img src="https://img.icons8.com/?size=100&id=CtrV2SV33rD9&format=png&color=000000"
-                                height="24" width="24" alt="Facebook logo/icon" loading="lazy" class="hover:scale-150 transition-all duration-300 ease-in-out">
+                                height="24" width="24" alt="Facebook logo/icon" loading="lazy"
+                                class="hover:scale-150 transition-all duration-300 ease-in-out">
                         </a>
                     </li>
                     <li>
                         <a href="mailto:tommy.poernomo@gmail.com" target="_blank" rel="noopener noreferrer"
                             aria-label="Tommy Poernomo e-mail">
-                        <img src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000" height="24"
-                            width="24" alt="Gmail logo/icon" loading="lazy" class="hover:scale-150 transition-all duration-300 ease-in-out">
+                            <img src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000"
+                                height="24" width="24" alt="Gmail logo/icon" loading="lazy"
+                                class="hover:scale-150 transition-all duration-300 ease-in-out">
                         </a>
                     </li>
                 </ul>
             </nav>
         </address>
     </footer>
+    <script>
+        // Ambil elemen
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Tambahkan event listener untuk tombol
+        menuButton.addEventListener('click', () => {
+            // Toggle (menampilkan/menyembunyikan) menu
+            mobileMenu.classList.toggle('hidden');
+
+            // Logika tambahan opsional: mengganti ikon hamburger menjadi X,
+            // atau mengunci scroll body saat menu terbuka.
+        });
+    </script>
+    <button>
+        <a href="#top-page" class="back-to-top hover:text-blue-800 fixed right-10 bottom-30 rounded-full bg-blue-500 text-white w-10 h-10 flex items-center justify-center text-2xl shadow-lg"
+            aria-label="Back to top of page">↑</a>
+    </button>
 </body>
 
 </html>
