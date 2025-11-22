@@ -1,38 +1,73 @@
 # Tommy Poernomo — Milestone 1
 
 ## Overview
-This is a simple multi-page personal website built as part of RevoU FSSE Milestone 1. It showcases my profile, projects, and a way to contact me.
+A responsive personal portfolio website built as part of RevoU FSSE Milestone 1. This project showcases my professional profile, projects, and contact information through a clean, modern interface.
 
-Pages included:
-- Home (`index.html`) with a hero section and quick intro.
-- About (`pages/about.html`) with bio, education, experience, and skills.
-- Projects (`pages/projects.html`) listing sample projects with previews and links.
-- Contact (`pages/contact.html`) with a message form.
+## 🌐 Demo
 
-Primary goals for this milestone were clean semantic HTML, organized CSS, basic accessibility, and simple navigation.
+You can view the live demo of the website here:
+- [Live Demo](https://your-username.github.io/milestone-1-Tommy-Poernomo/)
 
-## Features Implemented
-- **Semantic layout** using `header`, `main`, `section`, `article`, `nav`, `footer`.
-- **Accessible navigation**
-  - `aria-label` on navs and buttons.
-  - `aria-current` on active menu items.
-  - Descriptive `alt` and `figcaption` for images.
-- **SEO basics** with `title` and meta `description`, `keywords`, and `author` per page.
-- **Consistent styling** via a single stylesheet (`assets/css/style.css`).
-- **Responsive-friendly base**
-  - Fluid layout with flexbox and scalable typography.
-  - Smooth scroll behavior (`html { scroll-behavior: smooth; }`).
-- **Contact form** with labeled inputs, HTML5 validation (`required`, `type="email"`), and reset/submit buttons.
-- **Internal section navigation** on Projects page (anchor links to sections).
-- **Back to top** button on subpages using `window.scrollTo` with smooth behavior.
-- **Static asset handling**: favicon, profile image, preview images, and external social icons.
-- **Download CV** link from the navigation.
+Or explore individual pages directly:
+- [Home](https://your-username.github.io/milestone-1-Tommy-Poernomo/)
+- [About](https://your-username.github.io/milestone-1-Tommy-Poernomo/pages/about.html)
+- [Projects](https://your-username.github.io/milestone-1-Tommy-Poernomo/pages/projects.html)
+- [Contact](https://your-username.github.io/milestone-1-Tommy-Poernomo/pages/contact.html)
 
-## Technologies Used
-- **HTML5** for structure and semantics.
-- **CSS3** for styling, layout (flexbox), and smooth scrolling.
-- **Vanilla JavaScript (minimal)** for the Back-to-Top button on subpages.
-- **Git & GitHub** for version control and project hosting.
+## 🚀 Features
 
----
-If you want to preview locally, open `index.html` in your browser.
+### Pages
+- **Home** (`index.html`): Landing page with hero section and quick introduction
+- **About** (`/pages/about.html`): Detailed professional background, skills, and experience
+- **Projects** (`/pages/projects.html`): Showcase of completed projects with descriptions and links
+- **Contact** (`/pages/contact.html`): Contact form and direct contact information
+
+### Technical Implementation
+- **Responsive Design**: Mobile-first approach with responsive layouts
+- **Modern Styling**: Built with Tailwind CSS for efficient and maintainable styling
+- **Semantic HTML5**: Proper document structure and accessibility features
+- **Interactive Elements**: Smooth navigation and user interactions
+- **Performance Optimized**: Fast loading times and optimized assets
+
+## 🛠️ Technologies Used
+
+- **Frontend**:
+  - HTML5
+  - CSS3 with Tailwind CSS
+  - Vanilla JavaScript
+- **Development Tools**:
+  - Git & GitHub for version control
+  - VS Code as the primary code editor
+
+## 📁 Project Structure
+
+```
+├── assets/
+│   └── images/      # Image assets and icons
+├── pages/           # Additional HTML pages
+│   ├── about.html
+│   ├── contact.html
+│   └── projects.html
+├── index.html       # Homepage
+└── README.md        # Project documentation
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- (Optional) Local web server for development
+
+### Local Development
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/milestone-1-Tommy-Poernomo.git
+   ```
+2. Open `index.html` in your preferred web browser
+
+## 📝 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+- Built as part of the RevoU Full Stack Software Engineering program
+- Special thanks to the RevoU team and community for support and guidance
