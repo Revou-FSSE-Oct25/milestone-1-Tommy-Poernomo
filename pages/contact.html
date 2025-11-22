@@ -8,7 +8,7 @@
     <!--Web browser tab-->
     <title>Contact | Tommy Poernomo</title>
     <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -18,7 +18,8 @@
             margin-right: 10px;
             font-size: 25px !important;
         }
-    </style>    
+    </style>
+
     <!-- seo meta -->
     <meta name="description" content="Contact Tommy Poernomo to collaborate on web development projects or inquiries.">
     <meta name="keywords" content="Tommy Poernomo, State Civil Apparatus, web developer, portfolio, projects">
@@ -26,50 +27,80 @@
 
 </head>
 
-<body id="top-page">
+<body id="top-page" class="flex flex-col min-h-screen">
     <!-- header -->
-    <header class="site-header" role="banner">
-        <h1 class="logo">
+    <header class="site-header flex justify-between items-center p-10 pl-10 pr-10 text-blue-800 bg-slate-100 shadow-xl"
+        role="banner">
+
+        <h1 class="logo text-3xl font-bold hover:text-blue-500 z-10">
             <a href="../index.html" aria-label="Homepage of Tommy Poernomo">Tommy Poernomo</a>
         </h1>
-        <nav class="site-nav" aria-label="Main Navigation">
-            <ul class="list-nav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/about.html">About</a></li>
-                <li><a href="../pages/projects.html">Projects</a></li>
-                <li><a href="../pages/contact.html" aria-current="page">Contact</a></li>
-                <li><a href="../assets/documents/Tommy Poernomo - CV.pdf" download>Download CV</a></li>
+        <button id="menu-button" class="md:hidden p-2 z-10  hover:text-blue-500" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <nav id="mobile-menu" class=" transition-all duration-300 ease-in-out transform md:translate-x-0 hidden
+        site-nav  md:flex 
+        md:static md:w-auto 
+        fixed top-0 left-0 w-full h-full bg-white z-0 
+        md:bg-transparent md:h-auto 
+        flex-col justify-center items-center text-center
+    " aria-label="Main Navigation">
+            <ul class="list-nav flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 text-2xl md:text-lg">
+                <li class=" hover:text-blue-500"><a href="../index.html">Home</a></li>
+                <li class=" hover:text-blue-500"><a href="../pages/about.html">About</a></li>
+                <li class=" hover:text-blue-500"><a href="../pages/projects.html">Projects</a></li>
+                <li class=" hover:text-blue-500"><a href="../pages/contact.html" aria-current="page">Contact</a></li>
+                <li class=" hover:text-blue-500"><a href="../assets/documents/Tommy Poernomo - CV.pdf" download>Download
+                        CV</a></li>
             </ul>
-        </nav>
-                <nav>
-            <a href="#top-page" class="back-to-top" aria-label="Back to top of page">↑</a>
         </nav>
     </header>
 
     <!-- main -->
-    <main id="main-content" role="main">
+    <main id="main-content" role="main"
+        class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex items-center justify-center mx-auto bg-white rounded-lg p-4 md:flex overflow-hidden box-border flex-grow">
         <!-- contact -->
-        <section class="contact-me" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Message us</h2>
-            <p>Just tell us if you want collaborate to develop some web app.</p>
-            <form action="#" method="post" aria-labelledby="contact-heading" role="form">
-                <fieldset>
-                    <legend>Reach out to us</legend>
+        <section class="contact-me w-full max-w-xl" aria-labelledby="contact-heading">
+            <h2 id="contact-heading" class="text-3xl font-bold text-blue-800 mb-2 text-center">Message Us</h2>
+            <p class="text-gray-600 mb-8 text-center">Just tell us if you want collaborate to develop some web app.</p>
+            <form action="#" method="post" aria-labelledby="contact-heading" role="form" class="space-y-6">
+                <fieldset class="border border-gray-300 p-6 rounded-lg">
+                    <legend class="text-lg font-semibold px-2 text-blue-800">Reach out to us</legend>
 
-                    <label for="visitor-name">Name:</label>
-                    <input type="text" name="visitor-name" id="visitor-name" placeholder="Your name" autocomplete="name"
-                        required>
+                    <div>
+                        <label for="visitor-name" class="block text-gray-700 font-medium mb-1">Name:</label>
+                        <input type="text" name="visitor-name" id="visitor-name" placeholder="Your name"
+                            autocomplete="name" required
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150">
+                    </div>
 
-                    <label for="visitor-email">Email:</label>
-                    <input type="email" name="visitor-email" id="visitor-email"
-                        placeholder="name-email@email-service.com" autocomplete="email" required>
+                    <div>
+                        <label for="visitor-email" class="block text-gray-700 font-medium mb-1">Email:</label>
+                        <input type="email" name="visitor-email" id="visitor-email"
+                            placeholder="name-email@email-service.com" autocomplete="email" required
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150">
+                    </div>
 
-                    <label for="visitor-message">Message:</label>
-                    <textarea name="visitor-message" id="visitor-message" placeholder="Type Your message here"
-                        required></textarea>
+                    <div>
+                        <label for="visitor-message" class="block text-gray-700 font-medium mb-1">Message:</label>
+                        <textarea name="visitor-message" id="visitor-message" placeholder="Type Your message here"
+                            required rows="6"
+                            class="w-full p-3 border border-gray-300 rounded-lg resize-y focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150"></textarea>
+                    </div>
 
-                    <button type="submit">Send Message</button>
-                    <button type="reset">Reset</button>
+                    <div class="flex justify-end space-x-4 pt-4">
+                        <button type="submit"
+                            class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-200 shadow-md">
+                            Send Message
+                        </button>
+                        <button type="reset"
+                            class="px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-100 transition duration-200">
+                            Reset
+                        </button>
+                    </div>
                 </fieldset>
             </form>
         </section>
@@ -78,43 +109,68 @@
 
 
     <!-- footer -->
-    <footer class="site-footer" role="contentinfo">
+    <footer
+        class="site-footer flex flex-col md:flex-row justify-between items-center px-4 md:p-8 text-blue-800 bg-slate-100 shadow-xl"
+        role="contentinfo">
         <p>© 2025 <strong>Tommy Poernomo</strong>. All rights reserved.</p>
-        <address>
+        <address class="order-1 md:order-2">
             <nav aria-label="Social links">
-                <ul class="social-links">
+                <ul class="social-links flex space-x-4">
                     <li>
                         <a href="https://www.linkedin.com/in/tommy-poernomo-ab0500154" target="_blank"
                             rel="noopener noreferrer" aria-label="LinkedIn Profile">
                             <img src="https://img.icons8.com/color/48/000000/linkedin.png" height="24" width="24"
-                                alt="LinkedIn" loading="lazy" class="hover:scale-150 transition-all duration-300 ease-in-out">
+                                alt="LinkedIn" loading="lazy"
+                                class="hover:scale-150 transition-all duration-300 ease-in-out">
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Tommy-Poernomo" target="_blank" rel="noopener noreferrer"
                             aria-label="Github Profile">
                             <img src="https://img.icons8.com/color/48/000000/github.png" height="24" width="24"
-                                alt="GitHub logo/icon" loading="lazy" class="hover:scale-150 transition-all duration-300 ease-in-out">
+                                alt="GitHub logo/icon" loading="lazy"
+                                class="hover:scale-150 transition-all duration-300 ease-in-out">
                         </a>
                     </li>
                     <li>
                         <a href="https://web.facebook.com/tommy.poernomo" target="_blank" rel="noopener noreferrer"
                             aria-label="Facebook Profile">
                             <img src="https://img.icons8.com/?size=100&id=CtrV2SV33rD9&format=png&color=000000"
-                                height="24" width="24" alt="Facebook logo/icon" loading="lazy" class="hover:scale-150 transition-all duration-300 ease-in-out">
+                                height="24" width="24" alt="Facebook logo/icon" loading="lazy"
+                                class="hover:scale-150 transition-all duration-300 ease-in-out">
                         </a>
                     </li>
                     <li>
                         <a href="mailto:tommy.poernomo@gmail.com" target="_blank" rel="noopener noreferrer"
                             aria-label="Tommy Poernomo e-mail">
-                        <img src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000" height="24"
-                            width="24" alt="Gmail logo/icon" loading="lazy" class="hover:scale-150 transition-all duration-300 ease-in-out">
+                            <img src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000"
+                                height="24" width="24" alt="Gmail logo/icon" loading="lazy"
+                                class="hover:scale-150 transition-all duration-300 ease-in-out">
                         </a>
                     </li>
                 </ul>
             </nav>
         </address>
     </footer>
+    <script>
+        // Ambil elemen
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Tambahkan event listener untuk tombol
+        menuButton.addEventListener('click', () => {
+            // Toggle (menampilkan/menyembunyikan) menu
+            mobileMenu.classList.toggle('hidden');
+
+            // Logika tambahan opsional: mengganti ikon hamburger menjadi X,
+            // atau mengunci scroll body saat menu terbuka.
+        });
+    </script>
+    <button>
+        <a href="#top-page"
+            class="back-to-top hover:text-blue-800 fixed right-10 bottom-30 rounded-full bg-blue-500 text-white w-10 h-10 flex items-center justify-center text-2xl shadow-lg"
+            aria-label="Back to top of page">↑</a>
+    </button>
 </body>
 
 </html>
