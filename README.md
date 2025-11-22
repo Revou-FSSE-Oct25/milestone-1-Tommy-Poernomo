@@ -59,7 +59,7 @@ This is the preview of my Personal Website:
 | Homepage | ![Homepage](./assets/preview/index.jpg) |
 | About Page | ![About Page](./assets/preview/about.jpg) |
 | Projects Page | ![Projects Page](./assets/preview/projects.jpg) |
-| Contact Page | ![Contact Page](./assets/preview/contact.png) |
+| Contact Page | ![Contact Page](./assets/preview/contact.jpg) |
 
 ## 🚀 Getting Started
 
