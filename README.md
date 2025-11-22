@@ -51,6 +51,15 @@ Or explore individual pages directly:
 ├── index.html       # Homepage
 └── README.md        # Project documentation
 ```
+## Screenshot
+This is the preview of my Personal Website:
+
+| Page | Preview |
+| :--- | :-----: |
+| Homepage | ![Homepage](/assets/preview/pages/index.jpg) |
+| About Page | ![About Page](/assets/preview/pages/about.jpg) |
+| Projects Page | ![Projects Page](/assets/preview/pages/projects.jpg) |
+| Contact Page | ![Contact Page](/assets/preview/pages/contact.png) |
 
 ## 🚀 Getting Started
 
