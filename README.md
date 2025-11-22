@@ -56,10 +56,10 @@ This is the preview of my Personal Website:
 
 | Page | Preview |
 | :--- | :-----: |
-| Homepage | ![Homepage](/assets/preview/pages/index.jpg) |
-| About Page | ![About Page](/assets/preview/pages/about.jpg) |
-| Projects Page | ![Projects Page](/assets/preview/pages/projects.jpg) |
-| Contact Page | ![Contact Page](/assets/preview/pages/contact.png) |
+| Homepage | ![Homepage](./assets/preview/index.jpg) |
+| About Page | ![About Page](./assets/preview/about.jpg) |
+| Projects Page | ![Projects Page](./assets/preview/projects.jpg) |
+| Contact Page | ![Contact Page](./assets/preview/contact.png) |
 
 ## 🚀 Getting Started
 
