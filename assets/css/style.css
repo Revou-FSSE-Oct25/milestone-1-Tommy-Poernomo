@@ -451,3 +451,43 @@ html {
     margin-right: 10px;
     font-size: 25px !important;
 }
+
+/* Style Khusus untuk Menu Aktif berdasarkan aria-current */
+.list-nav a{
+    background-color: #f1f5f9;
+    /* Warna latar agak putih color-slate-100=#f1f5f9 */
+    padding: 8px 16px;
+    /* Memberi ruang di sekitar teks (Atas-Bawah 8px, Kiri-Kanan 16px) */
+    display: inline-block;
+    /* Memastikan padding bekerja dengan rapi */
+            border-radius: 10px;
+    /* Membuat sudut melengkung */
+}
+
+.site-nav a:hover{
+    background-color: #BFDBFE;
+    color: #1e40af;
+    transform: translateY(-2px);
+}
+
+/* Style Khusus untuk Menu Aktif berdasarkan aria-current */
+.list-nav a[aria-current="page"] {
+    /*color: #2563eb;       /* Warna Blue-600 bawaan Tailwind */
+    /* border-bottom: 2px solid #2563eb; /* Opsional: Tambah garis bawah biar makin jelas */
+    background-color: #2563eb;
+    /* Warna latar Biru (sesuai blue-600) */
+    color: #ffffff;
+    /* Warna teks Putih agar kontras */
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+    /* Opsional: Sedikit bayangan biru biar keren */
+}
+
+/* 1. Font untuk Judul, Logo, dan Navigasi */
+    /* h1, h2, h3, h4, h5, h6, .logo, .site-nav {
+        font-family: 'Poppins', sans-serif;
+    } */
+
+    /* 2. Font untuk Isi text lainnya (Body, Paragraf) */
+    /* body {
+        font-family: 'Inter', sans-serif;
+    } */

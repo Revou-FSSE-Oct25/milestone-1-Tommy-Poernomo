@@ -10,7 +10,19 @@
     <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            /* Mengganti font default 'sans' menjadi Inter */
+            --font-sans: "Inter", sans-serif;
+            
+            /* Membuat font baru bernama 'poppins' */
+            --font-poppins: "Poppins", sans-serif;
+        }
+    </style>
     <style>
         /* 1. Definisi Gerakan Melambai */
         @keyframes wave {
@@ -70,7 +82,7 @@
 
 </head>
 
-<body id="top-page" class="flex flex-col min-h-screen">
+<body id="top-page" class="flex flex-col min-h-screen font-sans">
     <!-- header -->
     <!-- <header class="site-header flex justify-between items-center p-10 pl-10 pr-10 text-blue-800 bg-slate-100 shadow-xl"
         role="banner"> -->
@@ -78,7 +90,7 @@
         class="site-header sticky top-0 z-50 flex justify-between items-center p-4 md:px-10 text-blue-800 bg-slate-100 shadow-xl"
         role="banner">
 
-        <h1 class="logo text-3xl font-bold hover:text-blue-500 z-10">
+        <h1 class="logo text-3xl font-bold hover:text-blue-500 z-10 font-poppins">
             <a href="index.html" aria-label="Homepage of Tommy Poernomo">Tommy Poernomo</a>
         </h1>
         <button id="menu-button" class="md:hidden p-2 z-10  hover:text-blue-500" aria-label="Toggle menu">
@@ -94,12 +106,12 @@
         md:bg-transparent md:h-auto 
         flex-col justify-center items-center text-center
     " aria-label="Main Navigation">
-            <ul class="list-nav flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 text-2xl md:text-lg">
-                <li class=" hover:text-blue-500"><a href="index.html" aria-current="page">Home</a></li>
-                <li class=" hover:text-blue-500"><a href="pages/about.html">About</a></li>
-                <li class=" hover:text-blue-500"><a href="pages/projects.html">Projects</a></li>
-                <li class=" hover:text-blue-500"><a href="pages/contact.html">Contact</a></li>
-                <li class=" hover:text-blue-500"><a href="assets/documents/Tommy Poernomo - CV.pdf" download>Download
+            <ul class="list-nav flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 text-2xl md:text-lg font-poppins">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="assets/documents/Tommy Poernomo - CV.pdf" download>Download
                         CV</a></li>
             </ul>
         </nav>
@@ -121,7 +133,7 @@
             </figure>
 
             <article class="max-w-lg text-center md:text-left">
-                <h2 class="text-2xl font-semibold mb-2">Hi, I'm Tommy Poernomo <span class="waving-hand">👋</span></h2>
+                <h2 class="text-2xl font-semibold mb-2 font-poppins">Hi, I'm Tommy Poernomo <span class="waving-hand">👋</span></h2>
                 <p class="text-gray-700">
                     Welcome to my personal website — a world where I share everything about my journey as a student at
                     <strong>FSSE RevoU</strong>, my learning experience, and my projects I've built so far.
@@ -134,7 +146,7 @@
     <footer
         class="site-footer flex flex-col md:flex-row justify-between items-center px-4 md:p-8 text-blue-800 bg-slate-100 shadow-xl"
         role="contentinfo">
-        <p>© 2025 <strong>Tommy Poernomo</strong>. All rights reserved.</p>
+        <p>© 2025 <strong class="font-poppins">Tommy Poernomo</strong>. All rights reserved.</p>
         <address class="order-1 md:order-2">
             <nav aria-label="Social links">
                 <ul class="social-links flex space-x-4">
