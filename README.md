@@ -6,13 +6,13 @@ A responsive personal portfolio website built as part of RevoU FSSE Milestone 1.
 ## 🌐 Demo
 
 You can view the live demo of the website here:
-- [Live Demo](https://your-username.github.io/milestone-1-Tommy-Poernomo/)
+- [Live Demo](https://revou-fsse-oct25.github.io/milestone-1-Tommy-Poernomo/)
 
 Or explore individual pages directly:
-- [Home](https://your-username.github.io/milestone-1-Tommy-Poernomo/)
-- [About](https://your-username.github.io/milestone-1-Tommy-Poernomo/pages/about.html)
-- [Projects](https://your-username.github.io/milestone-1-Tommy-Poernomo/pages/projects.html)
-- [Contact](https://your-username.github.io/milestone-1-Tommy-Poernomo/pages/contact.html)
+- [Home](https://revou-fsse-oct25.github.io/milestone-1-Tommy-Poernomo/)
+- [About](https://revou-fsse-oct25.github.io/milestone-1-Tommy-Poernomo/pages/about.html)
+- [Projects](https://revou-fsse-oct25.github.io/milestone-1-Tommy-Poernomo/pages/projects.html)
+- [Contact](https://revou-fsse-oct25.github.io/milestone-1-Tommy-Poernomo/pages/contact.html)
 
 ## 🚀 Features
 

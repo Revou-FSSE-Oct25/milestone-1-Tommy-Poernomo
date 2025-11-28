@@ -12,18 +12,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
         @theme {
             /* Mengganti font default 'sans' menjadi Inter */
-            --font-sans: "Inter", sans-serif;
+            --font-sans: "Plus Jakarta Sans", sans-serif;
             
             /* Membuat font baru bernama 'poppins' */
             --font-poppins: "Poppins", sans-serif;
         }
     </style>
-     
+
     <!-- seo meta -->
     <meta name="description" content="Explore Web Development projects by Tommy Poernomo">
     <meta name="keywords" content="Tommy Poernomo, State Civil Apparatus, web developer, portfolio, projects">
@@ -35,7 +37,9 @@
     <!-- header -->
     <!-- <header class="site-header flex justify-between items-center p-10 pl-10 pr-10 text-blue-800 bg-slate-100 shadow-xl"
         role="banner"> -->
-        <header class="site-header sticky top-0 z-50 flex justify-between items-center p-4 md:px-10 text-blue-800 bg-slate-100 shadow-xl" role="banner">
+    <header
+        class="site-header sticky top-0 z-50 flex justify-between items-center p-4 md:px-10 text-blue-800 bg-slate-100 shadow-xl"
+        role="banner">
 
         <h1 class="logo text-3xl font-bold hover:text-blue-500 z-10 font-poppins">
             <a href="index.html" aria-label="Homepage of Tommy Poernomo">Tommy Poernomo</a>
@@ -53,12 +57,14 @@
         md:bg-transparent md:h-auto 
         flex-col justify-center items-center text-center
     " aria-label="Main Navigation">
-            <ul class="list-nav flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 text-2xl md:text-lg font-poppins">
+            <ul
+                class="list-nav flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 text-2xl md:text-lg font-poppins">
                 <li class=" hover:text-blue-500"><a href="../index.html">Home</a></li>
                 <li class=" hover:text-blue-500"><a href="../pages/about.html">About</a></li>
                 <li class=" hover:text-blue-500"><a href="../pages/projects.html" aria-current="page">Projects</a></li>
                 <li class=" hover:text-blue-500"><a href="../pages/contact.html">Contact</a></li>
-                <li class=" hover:text-blue-500"><a href="../assets/documents/Tommy Poernomo - CV.pdf" download>Download CV</a></li>
+                <li class=" hover:text-blue-500"><a href="../assets/documents/Tommy Poernomo - CV.pdf" download>Download
+                        CV</a></li>
             </ul>
         </nav>
     </header>
@@ -66,97 +72,115 @@
     <!-- main -->
     <!-- <main id="main-content" role="main"
         class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex items-center justify-center mx-auto bg-white rounded-lg p-4 md:flex overflow-hidden box-border flex-grow"> -->
-            <main id="main-content" role="main"
+    <main id="main-content" role="main"
         class="mb-5 transition-all duration-300 ease-in-out flex flex-col items-center mx-auto bg-white rounded-lg p-6 md:p-10 flex-grow max-w-6xl">
         <section class="my-project w-full" aria-labelledby="projects-heading">
-        <h2 id="projects-heading" class="text-3xl font-bold text-blue-800 mb-2 text-center">All of My Projects</h2>
-        <p class="text-gray-600 mb-8 text-center">
-            Below are some of my projects I’ve worked on.
-        </p>
+            <h2 id="projects-heading" class="text-3xl font-bold text-blue-800 mb-2 text-center">All of My Projects</h2>
+            <p class="text-gray-600 mb-8 text-center">
+                Below are some of my projects I’ve worked on.
+            </p>
 
-        <aside class="mb-10 p-4 border-b border-gray-200">
-            <h3 id="section-nav-heading" class="text-xl font-semibold mb-2">Select Project</h3>
-            <nav aria-labelledby="section-nav-heading">
-                <ul class="flex flex-wrap gap-4 text-sm md:text-base">
-                    <li><a href="#to-do-list-project" class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full hover:bg-blue-200 transition duration-150">To Do List Web App</a></li>
-                    <li><a href="#portfolio-project" class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full hover:bg-blue-200 transition duration-150">Portfolio Website</a></li>
-                </ul>
-            </nav>
-        </aside>
-
-        <div class="space-y-12">
-            
-            <!-- Project 1: To Do List -->
-            <section class="my-project-card flex flex-col lg:flex-row gap-6 p-6 border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300" id="to-do-list-project">
-                
-                <figure class="w-full lg:w-2/5 overflow-hidden rounded-lg shadow-lg">
-                    <img src="../assets/preview/list-to-do.jpg" alt="Preview of To Do List" loading="lazy" 
-                        class="w-full h-auto object-cover rounded-lg transform hover:scale-105 transition-all duration-500 ease-in-out">
-                    <figcaption class="text-sm text-center text-gray-500 mt-2">Simple To Do List Web App</figcaption>
-                </figure>
-
-                <article class="my-project-info w-full lg:w-3/5">
-                    <h3 class="text-2xl font-bold mb-3 text-blue-800">To Do List Web App</h3>
-                    <p class="text-gray-700 mb-4">
-                        Small and simple To Do List Web App, using HTML5, CSS, and JavaScript basics.
-                    </p>
-                    
-                    <ul class="my-project-link mt-4">
-                        <li>
-                            <a href="https://revou-coding-camp.github.io/codingcamp-7-jul-25-tommypoernomo/"
-                                target=" _blank" rel="noopener noreferrer" 
-                                class="inline-flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-200 shadow-md">
-                                <!-- Menggunakan SVG untuk ikon, lebih baik daripada gambar eksternal -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.354 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                                </svg>
-                                <span>Open To Do List Web App</span>
-                            </a>
-                        </li>
+            <aside class="mb-10 p-4 border-b border-gray-200">
+                <h3 id="section-nav-heading" class="text-xl font-semibold mb-2">Select Project</h3>
+                <nav aria-labelledby="section-nav-heading">
+                    <ul class="flex flex-wrap gap-4 text-sm md:text-base">
+                        <li><a href="#to-do-list-project"
+                                class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full hover:bg-blue-200 transition duration-150">To
+                                Do List Web App</a></li>
+                        <li><a href="#portfolio-project"
+                                class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full hover:bg-blue-200 transition duration-150">Portfolio
+                                Website</a></li>
                     </ul>
-                </article>
-            </section>
+                </nav>
+            </aside>
 
-            <!-- Project 2: Portfolio Website -->
-            <section class="my-project-card flex flex-col lg:flex-row gap-6 p-6 border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300" id="portfolio-project">
-                
-                <figure class="w-full lg:w-2/5 overflow-hidden rounded-lg shadow-lg">
-                    <img src="../assets/preview/portfolio-web.png" alt="Preview of Portfolio" loading="lazy" 
-                        class="w-full h-auto object-cover rounded-lg transform hover:scale-105 transition-all duration-500 ease-in-out">
-                    <figcaption class="text-sm text-center text-gray-500 mt-2">Portfolio Web</figcaption>
-                </figure>
+            <div class="space-y-12">
 
-                <article class="my-project-info w-full lg:w-3/5">
-                    <h3 class="text-2xl font-bold mb-3 text-blue-800">Portfolio Website</h3>
-                    <p class="text-gray-700 mb-4">
-                        A Portfolio Website mini projects with HTML5, CSS, and JavaScript. Don't hesitate to open it.
-                    </p>
-                    
-                    <ul class="my-project-link mt-4">
-                        <li>
-                            <a href="https://revou-coding-camp.github.io/codingcamp-14-jul-25-tommypoernomo/"
-                                target=" _blank" rel="noopener noreferrer" 
-                                class="inline-flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-200 shadow-md">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.354 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                                </svg>
-                                <span>Open Portfolio Website</span>
-                            </a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            
-        </div>
-    </section>
+                <!-- Project 1: To Do List -->
+                <section
+                    class="my-project-card flex flex-col lg:flex-row gap-6 p-6 border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
+                    id="to-do-list-project">
+
+                    <figure class="w-full lg:w-2/5 overflow-hidden rounded-lg shadow-lg">
+                        <img src="../assets/preview/list-to-do.jpg" alt="Preview of To Do List" loading="lazy"
+                            class="w-full h-auto object-cover rounded-lg transform hover:scale-105 transition-all duration-500 ease-in-out">
+                        <figcaption class="text-sm text-center text-gray-500 mt-2">Simple To Do List Web App
+                        </figcaption>
+                    </figure>
+
+                    <article class="my-project-info w-full lg:w-3/5">
+                        <h3 class="text-2xl font-bold mb-3 text-blue-800">To Do List Web App</h3>
+                        <p class="text-gray-700 mb-4">
+                            Small and simple To Do List Web App, using HTML5, CSS, and JavaScript basics.
+                        </p>
+
+                        <ul class="my-project-link mt-4">
+                            <li>
+                                <a href="https://revou-coding-camp.github.io/codingcamp-7-jul-25-tommypoernomo/"
+                                    target=" _blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-200 shadow-md">
+                                    <!-- Menggunakan SVG untuk ikon, lebih baik daripada gambar eksternal -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.354 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                    <span>Open To Do List Web App</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- Project 2: Portfolio Website -->
+                <section
+                    class="my-project-card flex flex-col lg:flex-row gap-6 p-6 border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
+                    id="portfolio-project">
+
+                    <figure class="w-full lg:w-2/5 overflow-hidden rounded-lg shadow-lg">
+                        <img src="../assets/preview/portfolio-web.png" alt="Preview of Portfolio" loading="lazy"
+                            class="w-full h-auto object-cover rounded-lg transform hover:scale-105 transition-all duration-500 ease-in-out">
+                        <figcaption class="text-sm text-center text-gray-500 mt-2">Portfolio Web</figcaption>
+                    </figure>
+
+                    <article class="my-project-info w-full lg:w-3/5">
+                        <h3 class="text-2xl font-bold mb-3 text-blue-800">Portfolio Website</h3>
+                        <p class="text-gray-700 mb-4">
+                            A Portfolio Website mini projects with HTML5, CSS, and JavaScript. Don't hesitate to open
+                            it.
+                        </p>
+
+                        <ul class="my-project-link mt-4">
+                            <li>
+                                <a href="https://revou-coding-camp.github.io/codingcamp-14-jul-25-tommypoernomo/"
+                                    target=" _blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-200 shadow-md">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                        <path fill-rule="evenodd"
+                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.354 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                    <span>Open Portfolio Website</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+            </div>
+        </section>
     </main>
 
 
 
     <!-- footer -->
-    <footer class="site-footer flex flex-col md:flex-row justify-between items-center px-4 md:p-8 text-blue-800 bg-slate-100 shadow-xl" role="contentinfo">
+    <footer
+        class="site-footer flex flex-col md:flex-row justify-between items-center px-4 md:p-8 text-blue-800 bg-slate-100 shadow-xl"
+        role="contentinfo">
         <p>© 2025 <strong class="font-poppins">Tommy Poernomo</strong>. All rights reserved.</p>
         <address class="order-1 md:order-2">
             <nav aria-label="Social links">
@@ -211,23 +235,24 @@
             // atau mengunci scroll body saat menu terbuka.
         });
         // --- Script Tombol Back to Top ---
-    const backToTopBtn = document.getElementById('backToTopBtn');
+        const backToTopBtn = document.getElementById('backToTopBtn');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            // Jika scroll lebih dari 300px, munculkan tombol
-            backToTopBtn.classList.remove('hidden');
-            backToTopBtn.classList.add('flex'); // Gunakan flex agar panah tetap di tengah
-        } else {
-            // Jika di atas, sembunyikan
-            backToTopBtn.classList.add('hidden');
-            backToTopBtn.classList.remove('flex');
-        }
-    });
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                // Jika scroll lebih dari 300px, munculkan tombol
+                backToTopBtn.classList.remove('hidden');
+                backToTopBtn.classList.add('flex'); // Gunakan flex agar panah tetap di tengah
+            } else {
+                // Jika di atas, sembunyikan
+                backToTopBtn.classList.add('hidden');
+                backToTopBtn.classList.remove('flex');
+            }
+        });
     </script>
-        <a href="#top-page" id="backToTopBtn" class="back-to-top hover:text-blue-800 hover:bg-blue-200 fixed right-10 bottom-30 rounded-full bg-blue-500 text-white w-10 h-10 flex items-center justify-center text-2xl shadow-lg"
-            aria-label="Back to top of page">↑</a>
-            <!-- <a href="#top-page" id="backToTopBtn" class="hidden back-to-top fixed right-10 bottom-10 z-40 rounded-full bg-blue-500 text-white w-12 h-12 items-center justify-center text-2xl shadow-lg hover:bg-blue-700 transition-colors duration-300 ease-in-out"    aria-label="Back to top of page">
+    <a href="#top-page" id="backToTopBtn"
+        class="back-to-top hover:text-blue-800 hover:bg-blue-200 fixed right-10 bottom-30 rounded-full bg-blue-500 text-white w-10 h-10 flex items-center justify-center text-2xl shadow-lg"
+        aria-label="Back to top of page">↑</a>
+    <!-- <a href="#top-page" id="backToTopBtn" class="hidden back-to-top fixed right-10 bottom-10 z-40 rounded-full bg-blue-500 text-white w-12 h-12 items-center justify-center text-2xl shadow-lg hover:bg-blue-700 transition-colors duration-300 ease-in-out"    aria-label="Back to top of page">
    ↑
 </a>
 <a href="#top-page"
