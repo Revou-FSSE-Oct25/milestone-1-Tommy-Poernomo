@@ -1,11 +1,7 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -30,7 +26,7 @@ ul {
     list-style: none;
 }
 
-/* header */
+/* header 
 .site-header {
     background-color: #0065ca;
     padding: 16px 60px;
@@ -427,7 +423,7 @@ button[type="reset"]:hover {
     opacity: 1;
 }
 
-/* back-to-top */
+/* back-to-top 
 .back-to-top {
     position: fixed;
     bottom: 200px;
@@ -443,4 +439,15 @@ button[type="reset"]:hover {
 .back-to-top:hover {
     background-color: #023E8A;
     transform: scale(1.1);
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fa,
+.fa-brands,
+.fa-solid {
+    margin-right: 10px;
+    font-size: 25px !important;
 }

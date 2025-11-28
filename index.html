@@ -8,39 +8,58 @@
     <!--Web browser tab-->
     <title>Personal Website | Tommy Poernomo</title>
     <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        html {
-        scroll-behavior: smooth;
-        }
-        .fa,
-        .fa-brands,
-        .fa-solid {
-            margin-right: 10px;
-            font-size: 25px !important;
-        }
-    /* 1. Definisi Gerakan Melambai */
-    @keyframes wave {
-        0% { transform: rotate(0.0deg); }
-        10% { transform: rotate(14.0deg); }
-        20% { transform: rotate(-8.0deg); }
-        30% { transform: rotate(14.0deg); }
-        40% { transform: rotate(-4.0deg); }
-        50% { transform: rotate(10.0deg); }
-        60% { transform: rotate(0.0deg); }
-        100% { transform: rotate(0.0deg); }
-    }
+        /* 1. Definisi Gerakan Melambai */
+        @keyframes wave {
+            0% {
+                transform: rotate(0.0deg);
+            }
 
-    /* 2. Class untuk menerapkan animasi */
-    .waving-hand {
-        display: inline-block;  /* Penting: elemen inline biasa tidak bisa di-rotate */
-        animation-name: wave;   /* Panggil animasi 'wave' */
-        animation-duration: 2.5s; /* Durasi satu siklus lambaian */
-        animation-iteration-count: infinite; /* Ulangi terus menerus */
-        transform-origin: 70% 70%; /* Titik putar di pergelangan tangan (bukan tengah) */
-    }
+            10% {
+                transform: rotate(14.0deg);
+            }
+
+            20% {
+                transform: rotate(-8.0deg);
+            }
+
+            30% {
+                transform: rotate(14.0deg);
+            }
+
+            40% {
+                transform: rotate(-4.0deg);
+            }
+
+            50% {
+                transform: rotate(10.0deg);
+            }
+
+            60% {
+                transform: rotate(0.0deg);
+            }
+
+            100% {
+                transform: rotate(0.0deg);
+            }
+        }
+
+        /* 2. Class untuk menerapkan animasi */
+        .waving-hand {
+            display: inline-block;
+            /* Penting: elemen inline biasa tidak bisa di-rotate */
+            animation-name: wave;
+            /* Panggil animasi 'wave' */
+            animation-duration: 2.5s;
+            /* Durasi satu siklus lambaian */
+            animation-iteration-count: infinite;
+            /* Ulangi terus menerus */
+            transform-origin: 70% 70%;
+            /* Titik putar di pergelangan tangan (bukan tengah) */
+        }
     </style>
 
     <!-- seo meta -->
@@ -55,7 +74,9 @@
     <!-- header -->
     <!-- <header class="site-header flex justify-between items-center p-10 pl-10 pr-10 text-blue-800 bg-slate-100 shadow-xl"
         role="banner"> -->
-        <header class="site-header sticky top-0 z-50 flex justify-between items-center p-4 md:px-10 text-blue-800 bg-slate-100 shadow-xl" role="banner">
+    <header
+        class="site-header sticky top-0 z-50 flex justify-between items-center p-4 md:px-10 text-blue-800 bg-slate-100 shadow-xl"
+        role="banner">
 
         <h1 class="logo text-3xl font-bold hover:text-blue-500 z-10">
             <a href="index.html" aria-label="Homepage of Tommy Poernomo">Tommy Poernomo</a>
