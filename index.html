@@ -6,18 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Web browser tab-->
-    <title>Tommy Poernomo | Personal Website</title>
+    <title>Personal Website | Tommy Poernomo</title>
     <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
+        html {
+        scroll-behavior: smooth;
+        }
         .fa,
         .fa-brands,
         .fa-solid {
             margin-right: 10px;
             font-size: 25px !important;
         }
+    /* 1. Definisi Gerakan Melambai */
+    @keyframes wave {
+        0% { transform: rotate(0.0deg); }
+        10% { transform: rotate(14.0deg); }
+        20% { transform: rotate(-8.0deg); }
+        30% { transform: rotate(14.0deg); }
+        40% { transform: rotate(-4.0deg); }
+        50% { transform: rotate(10.0deg); }
+        60% { transform: rotate(0.0deg); }
+        100% { transform: rotate(0.0deg); }
+    }
+
+    /* 2. Class untuk menerapkan animasi */
+    .waving-hand {
+        display: inline-block;  /* Penting: elemen inline biasa tidak bisa di-rotate */
+        animation-name: wave;   /* Panggil animasi 'wave' */
+        animation-duration: 2.5s; /* Durasi satu siklus lambaian */
+        animation-iteration-count: infinite; /* Ulangi terus menerus */
+        transform-origin: 70% 70%; /* Titik putar di pergelangan tangan (bukan tengah) */
+    }
     </style>
 
     <!-- seo meta -->
@@ -64,12 +87,12 @@
 
     <!-- main -->
     <main id="main-content" role="main"
-        class="mb-5 hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out flex items-center justify-center mx-auto bg-white rounded-lg p-4 md:flex overflow-hidden box-border flex-grow">
+        class="mb-5  flex items-center justify-center mx-auto bg-white rounded-lg p-4 md:flex overflow-hidden box-border flex-grow">
         <!-- hero -->
         <section class="hero flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8" id="hero">
             <figure class="flex flex-col items-center">
                 <img src="assets/images/profile2.png" alt="Profile photo of Tommy Poernomo" loading="lazy"
-                    class="rounded-full border-2 border-blue-800 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 object-cover">
+                    class="rounded-full border-2 border-blue-800 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 2xl:w-64 2xl:h-64 object-cover hover:shadow-xl hover:scale-102 transition-all duration-300 ease-in-out">
                 <figcaption class="mt-2">
                     <div class="text-blue-800 font-sans italic text-center">Tommy Poernomo — Beginner Web Developer
                     </div>
@@ -77,7 +100,7 @@
             </figure>
 
             <article class="max-w-lg text-center md:text-left">
-                <h2 class="text-2xl font-semibold mb-2">Hi, I'm Tommy Poernomo 👋</h2>
+                <h2 class="text-2xl font-semibold mb-2">Hi, I'm Tommy Poernomo <span class="waving-hand">👋</span></h2>
                 <p class="text-gray-700">
                     Welcome to my personal website — a world where I share everything about my journey as a student at
                     <strong>FSSE RevoU</strong>, my learning experience, and my projects I've built so far.
@@ -146,7 +169,7 @@
     </script>
     <button>
         <a href="#top-page"
-            class="back-to-top hover:text-blue-800 fixed right-10 bottom-30 rounded-full bg-blue-500 text-white w-10 h-10 flex items-center justify-center text-2xl shadow-lg"
+            class="back-to-top hover:text-blue-800 hover:bg-blue-200 fixed right-10 bottom-30 rounded-full bg-blue-500 text-white w-10 h-10 flex items-center justify-center text-2xl shadow-lg"
             aria-label="Back to top of page">↑</a>
     </button>
 </body>
