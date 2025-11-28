@@ -51,12 +51,14 @@
             </svg>
         </button>
         <nav id="mobile-menu" class=" transition-all duration-300 ease-in-out transform md:translate-x-0 hidden
-        site-nav  md:flex 
-        md:static md:w-auto 
-        fixed top-0 left-0 w-full h-full bg-white z-0 
-        md:bg-transparent md:h-auto 
-        flex-col justify-center items-center text-center
+        site-nav  md:flex         md:static md:w-auto fixed top-[75px] left-0 w-full h-[calc(100vh-75px)] bg-white z-40
+    md:bg-transparent md:h-auto md:z-auto     flex-col justify-start pt-10 items-center text-center shadow-inner"
     " aria-label="Main Navigation">
+    <button id="close-menu-button" class="md:hidden absolute top-6 right-6 p-2 text-blue-800 hover:text-red-500 transition-colors" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
             <ul
                 class="list-nav flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 text-2xl md:text-lg font-poppins">
                 <li><a href="../index.html">Home</a></li>
@@ -163,17 +165,21 @@
         </address>
     </footer>
     <script>
-        // Ambil elemen
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+        // --- 1. Script Menu Mobile Full Screen ---
+        const menuButton = document.getElementById('menu-button');       // Tombol Hamburger (Buka)
+        const closeButton = document.getElementById('close-menu-button'); // Tombol X (Tutup)
+        const mobileMenu = document.getElementById('mobile-menu');       // Layar Menu
 
-        // Tambahkan event listener untuk tombol
+        // Fungsi Buka Menu
         menuButton.addEventListener('click', () => {
-            // Toggle (menampilkan/menyembunyikan) menu
-            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add('flex'); // Paksa jadi flex agar centering jalan
+        });
 
-            // Logika tambahan opsional: mengganti ikon hamburger menjadi X,
-            // atau mengunci scroll body saat menu terbuka.
+        // Fungsi Tutup Menu
+        closeButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
         });
     </script>
     <button>
